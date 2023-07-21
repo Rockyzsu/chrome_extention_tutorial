@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Can not touch me",
+    "description": "Remove goggle button",
+    "version": "1.0",
+    "action": {
+        "default_icon": "image/icon48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.baidu.com/"],
+            "js": ["js/cannot_touch_v2.js"]
+        }
+    ]
+}

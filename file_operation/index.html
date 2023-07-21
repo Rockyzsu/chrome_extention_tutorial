@@ -1,0 +1,30 @@
+<html>
+    <title>Just test</title>
+    <body>
+        <h1>Coming soon</h1>
+        <script>
+            function httpRequest(url,callback){
+
+                var xr = new XMLHttpRequest();
+                xr.open('GET',url,true);
+                xr.onreadystatechange = function(){
+                    if (xr.readyState==4){
+                        var content = xr.responseText;
+                        // console.log(content);
+                        callback(content);
+                    }
+
+                };
+                xr.send();
+                console.log('no block');
+            }
+
+            httpRequest('text.txt',function(content){
+                console.log(content);
+
+            });
+
+
+        </script>
+    </body>
+</html>

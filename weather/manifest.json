@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Weather",
+    "description": "Weather",
+    "version": "1.0",
+    "icons":{
+        "16":"image/icon.png",
+        "48":"image/icon.png",
+        "128":"image/icon.png"
+    },
+    "action": {
+        "default_popup":"index.html",
+        "default_icon": "image/icon.png"
+    },
+    "options_page":"option.html",
+    "host_permissions":[
+        "https://www.jisilu.cn/data/cbnew/cb_list_new/?___jsl=LST___t=1689663194990"
+    ]
+
+}

@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Background Check",
+    "description": "Check website work",
+    "version": "1.0",
+    "icons": {
+        "16": "image/icon.png",
+        "48": "image/icon.png",
+        "128": "image/icon.png"
+    },
+    "action": {
+        "default_icon": "image/icon.png"
+    },
+    "background": {
+        "service_worker": "work.js",
+        "type": "module"
+    },
+    "host_permissions": [
+        "*://kaihu51.com/*",
+        "https://extension-tips.glitch.me/tips.json"
+    ],
+    "permissions": ["storage", "alarms"],
+    "content_scripts": [
+        {
+          "matches": ["https://developer.chrome.com/docs/extensions/reference/*"],
+          "js": ["content.js"]
+        }
+      ]
+}
