@@ -2,12 +2,13 @@
   "name": "IP Address Checker",
   "description": "A basic Chrome extension to fetch user's IP address",
   "version": "1.0",
-  "manifest_version": 2,
-  "permissions": [
-    "https://api.ipify.org/"
-  ],
-  "browser_action": {
+  "manifest_version": 3,
+
+  "action": {
     "default_icon": "image/icon.png",
     "default_popup": "popup.html"
-  }
+  },
+  "host_permissions": [
+    "https://api.ipify.org/"
+  ]
 }
